@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/activityHeader"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/rounded_bottom_corners">
+
+        <TextView
+            android:id="@+id/headerActivityTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activities"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/headerActivityBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/updateActivityBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="3dp"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/update_activity"
+                android:scaleType="fitCenter"
+                android:src="@drawable/edit_pencil"
+                app:tint="@color/white" />
+
+            <ImageButton
+                android:id="@+id/deleteActivityBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="4dp"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/delete_activity"
+                android:scaleType="fitCenter"
+                android:src="@drawable/delete_trash"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvBackToCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/back_button"
+            android:textColor="@color/secondary_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="18dp">
+
+        <LinearLayout
+            android:id="@+id/lyActivityDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvActivityName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="@string/dummy_activity_title"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvActivityPeriod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:paddingBottom="8dp"
+                android:text="@string/dummy_activity_time"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvActivityPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:paddingBottom="8dp"
+                android:text="@string/dummy_group_address"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvActivityDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lorem_ipsum_desc"
+                android:textColor="@color/grey4" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_style"
+            android:backgroundTint="@color/grey2"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <ImageButton
+                android:id="@+id/ibItinerary"
+                android:layout_width="wrap_content"
+                android:layout_height="96dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/edit_text_style"
+                android:backgroundTint="@color/main_blue_40"
+                android:contentDescription="@string/itinerary"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/itinerary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.fragments.group.GroupFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHeader"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/rounded_bottom_corners">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/group_title"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/headerGroupBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/updateGroupBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="3dp"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/update_group"
+                android:scaleType="fitCenter"
+                android:src="@drawable/edit_pencil"
+                app:tint="@color/white" />
+
+            <ImageButton
+                android:id="@+id/deleteGroupBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:contentDescription="@string/delete_group"
+                android:scaleType="fitCenter"
+                android:src="@drawable/delete_trash"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/back_button"
+            android:textColor="@color/secondary_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="18dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvGroupName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="@string/dummy_group_name"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvGroupPeriod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:paddingBottom="8dp"
+                android:text="@string/dummy_group_date"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvGroupPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:paddingBottom="8dp"
+                android:text="@string/dummy_group_address"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvGroupDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lorem_ipsum_desc"
+                android:textColor="@color/grey4" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_style"
+            android:backgroundTint="@color/grey2"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/ibCalendar"
+                android:layout_width="wrap_content"
+                android:layout_height="96dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/edit_text_style"
+                android:backgroundTint="@color/main_blue_40"
+                android:contentDescription="@string/calendar"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/calendar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/ibTchat"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/edit_text_style"
+                android:backgroundTint="@color/main_blue_40"
+                android:contentDescription="@string/chat"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tchat"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibCalendar" />
+
+            <ImageButton
+                android:id="@+id/ibItinerary"
+                android:layout_width="wrap_content"
+                android:layout_height="96dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/edit_text_style"
+                android:backgroundTint="@color/main_blue_40"
+                android:contentDescription="@string/itinerary"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/itinerary"
+                app:layout_constraintEnd_toStartOf="@+id/ibWeather"
+                app:layout_constraintStart_toEndOf="@+id/ibCalendar"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/ibAddMemberToGroup"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/edit_text_style"
+                android:backgroundTint="@color/main_blue_40"
+                android:contentDescription="@string/add_member"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/person_add"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/ibItinerary"
+                app:layout_constraintTop_toBottomOf="@+id/ibItinerary" />
+
+            <ImageButton
+                android:id="@+id/ibWeather"
+                android:layout_width="wrap_content"
+                android:layout_height="96dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/edit_text_style"
+                android:backgroundTint="@color/main_blue_40"
+                android:contentDescription="@string/weather"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/weather"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

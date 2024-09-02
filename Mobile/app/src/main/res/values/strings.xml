@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">PlaniVancances</string>
+    <string name="app_logo">Planivacances Logo</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="date_time_format">dd/MM/yyyy HH:mm</string>
+    <string name="date_format">dd/MM/yyyy</string>
+    <string name="date_short_format">dd/MM/yy</string>
+
+    <string name="back_button">Retour</string>
+
+    <string name="sun">Soleil</string>
+    <string name="sea">Mer</string>
+    <string name="palmtree">Palmier</string>
+    <string name="colored_dot">Point de couleur</string>
+
+
+    <string name="connection">Connexion</string>
+    <string name="register">Créer un compte</string>
+    <string name="name_hint">Nom</string>
+    <string name="mail_hint">Email</string>
+    <string name="password_hint">Mot de passe</string>
+    <string name="stay_connected">Rester connecté</string>
+    <string name="connect">Se connecter</string>
+    <string name="create_account">Créer un compte</string>
+    <string name="no_account">Pas encore de compte ?</string>
+    <string name="already_have_account">Vous avez déjà un compte ?</string>
+    <string name="continue_with_google">Continuer avec Google</string>
+    <string name="google_logo">Google logo</string>
+
+
+    <string name="home">Accueil</string>
+    <string name="notification_bell">Cloche de notification</string>
+    <string name="accept_group">Accepter l\'invitation</string>
+    <string name="decline_group">Décliner l\'invitation</string>
+    <string name="dummy_group_invite">Vous avez été invité à rejoindre le groupe &quot;Groupe Erreur&quot; !</string>
+
+    <string name="group_title">Groupe</string>
+    <string name="dummy_group_name">&quot;Groupe Erreur&quot;</string>
+    <string name="dummy_group_date">Du 04/04/2404 au 04/04/2404</string>
+    <string name="dummy_group_date_short">04/04/24 – 04/04/24</string>
+    <string name="dummy_group_address">Rue de l\'erreur, 400, Internet</string>
+    <string name="lorem_ipsum_desc">Description Fugiat do aliqua laboris cillum sint dolor officia adipisicing excepteur fugiat officia. Cupidatat ut elit consequat ea laborum occaecat laborum aute consectetur Lorem exercitation. Lorem anim minim officia aliquip commodo deserunt mollit. Duis deserunt quis cillum voluptate duis ipsum quis incididunt elit excepteur labore duis cillum. Voluptate sint nulla minim eiusmod in nulla. Ea id ad duis esse adipisicing culpa ex esse ea dolore consequat. Reprehenderit eu minim veniam aliquip do ipsum duis do qui adipisicing aliquip ad occaecat.</string>
+    <string name="lorem_ipsum_desc_short">Description Fugiat do aliqua laboris cillum sint dolor officia adipisicing excepteur fugiat officia. Cupidatat ut elit consequat ea laborum occaecat laborum aute consectetur Lorem exercitation.</string>
+
+    <string name="create_group_title">Créer un groupe</string>
+    <string name="group_name_hint">Nom du groupe</string>
+    <string name="start_date_text">Sélectionner une date de départ</string>
+    <string name="end_date_text">Sélectionner une date de fin</string>
+    <string name="place_text">Sélectionner un lieu</string>
+    <string name="desc_hint">Description</string>
+    <string name="add_group">Ajouter le groupe</string>
+    <string name="group_image">Image Groupe</string>
+
+    <string name="modify_group_title">Modifier un groupe</string>
+    <string name="update_group">Modifier le groupe</string>
+
+    <string name="delete_group">Supprimer le groupe</string>
+
+
+    <string name="calendar">Calendrier</string>
+    <string name="itinerary">Itinéraire</string>
+    <string name="weather">Météo</string>
+    <string name="chat">Tchat</string>
+    <string name="add_member">Ajouter un membre au groupe</string>
+
+
+    <string name="activities">Activités</string>
+    <string name="create_activity">Créer une activité</string>
+    <string name="update_activity">Modifier Activité</string>
+    <string name="delete_activity">Supprimer Activité</string>
+    <string name="dummy_activity_title">Activité Erreur</string>
+    <string name="dummy_activity_time">Le 04/04/2404 à 04h04 - Durée : 04h04</string>
+    <string name="dummy_activity_duration">40 min</string>
+
+    <string name="activity_title_hint">Titre de l\'activité</string>
+
+
+    <string name="calendar_title">Calendrier</string>
+    <string name="export_calendar">Exporter calendrier</string>
+
+
+    <string name="message_title">Messages</string>
+    <string name="write_message">Ecrire un message …</string>
+    <string name="send_message">Envoyer message</string>
+    <string name="message_time">04/04/24 – 04h44</string>
+    <string name="message_name">group mate name</string>
+
+
+    <string name="weather_title">Météo</string>
+    <string name="dummy_weather_infos">Humidité: 44% Pluie: 4% Vent: 44kmh</string>
+    <string name="dummy_weather_temp">20° C</string>
+    <string name="dummy_weather_date">Jeudi - 29/05/23</string>
+    <string name="weather_image">Image météo</string>
+
+</resources>
